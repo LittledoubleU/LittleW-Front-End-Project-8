@@ -1,5 +1,15 @@
 :root {
+    --color-dark-indigo: #101225;
 
+    --bg-color: var(--color-dark-indigo);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+section {
+    overflow: hidden;
 }
 
 /* background image in div > img template */
@@ -9,4 +19,22 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 20%;
+    aspect-ratio: 0.575;
+    background-color: rgba(244, 36, 255, 0.587);
+    position: relative;
 }

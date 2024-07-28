@@ -369,3 +369,19 @@
     flex-direction: column;
     gap: 5rem;
   }
+
+  section {
+    position: relative;
+  }
+
+  #section-1 {
+    background-color: rgba(165, 42, 42, 0.572);
+  }
+
+  #section-2 {
+    background-color: rgba(63, 42, 165, 0.572);
+  }
+
+  #section-3 {
+    background-color: rgba(42, 165, 56, 0.535);
+  }
