@@ -1,0 +1,23 @@
+{
+  "name": "exercise-8",
+  "version": "1.0.0",
+  "description": "I make it for fun.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LittledoubleU/LittleW-Front-End-Project-8.git"
+  },
+  "author": "W",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LittledoubleU/LittleW-Front-End-Project-8/issues"
+  },
+  "homepage": "https://github.com/LittledoubleU/LittleW-Front-End-Project-8#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
