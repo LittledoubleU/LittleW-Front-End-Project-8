@@ -32,9 +32,92 @@ section {
     align-items: center;
 }
 
+.absolute {
+    position: absolute;
+}
+
 .card {
-    max-width: 20%;
+    z-index: 2;
+    min-width: 20%;
     aspect-ratio: 0.575;
-    background-color: rgba(244, 36, 255, 0.587);
+    background-color: rgba(255, 36, 36, 0);
     position: relative;
+}
+
+.bg-card {
+    overflow: hidden;
+    z-index: 3;
+    img {
+        position: absolute;
+    }
+
+    .bg-light {
+        left: 12.5%;
+        bottom: 10%;
+        width: 75%;
+    }
+
+    .pattern {
+        position: absolute;
+        width: 75%;
+        overflow: hidden;
+        bottom: 10%;
+        aspect-ratio: 1;
+        left: 12.5%;
+        img {
+            left: -15%;
+            max-width: 130%;
+            bottom: -20%;
+        }
+    }
+}
+
+.union {
+    z-index: 4;
+    img {
+        position: absolute;
+        bottom: -1%;
+        left: -7.5%;
+        max-width: 115%;
+    }
+}
+
+.frame {
+    z-index: 5;
+}
+
+.symbol {
+    z-index: 5;
+    bottom: 30%;
+    width: 100%;
+    aspect-ratio: 1;
+
+    .books > img {
+        position: absolute;
+        width: 10.5%;
+    }
+
+    .books > img:nth-child(1) {
+        bottom: 20%;
+        left: 12.5%;
+    }
+
+    .books > img:nth-child(2) {
+        bottom: 30.5%;
+        left: 24.25%;
+    }
+
+    .books > img:nth-child(3) {
+        bottom: 26.5%;
+        right: 12.5%;
+    }
+
+    .books > img:nth-child(4) {
+        bottom: 16%;
+        right: 24.25%;
+    }
+
+    .eyes > img {
+        position: absolute;
+    }
 }
