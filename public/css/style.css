@@ -188,16 +188,110 @@ section {
 /* card 2 */
 .symbol {
 
-    .head img {
+    .arrows img, .head img {
         position: absolute;
-        width: 10%;
+    }
+
+    .arrows img {
+        width: 58.5%;
+    }
+
+    .arrows img:nth-child(1) {
+        bottom: 8.5%;
+        left: 8.5%;
+    }
+
+    .arrows img:nth-child(2) {
+        bottom: 4.5%;
+        left: 14.5%;
+    }
+
+    .arrows img:nth-child(3) {
+        bottom: 8.5%;
+        right: 10.25%;
+    }
+
+    .arrows img:nth-child(4) {
+        bottom: 4.5%;
+        right: 16.25%;
+    }
+    
+    /* center head*/
+    .head > img {
+        width: 19.45%;
+        bottom: 8%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .head .left img:nth-child(1) {
+        width: 18.925%;
+        bottom: 26%;
+        left: 28.95%;
+    }
+
+    .head .left img:nth-child(2) {
+        width: 19.976%;
+        bottom: 37%;
+        left: 12%;
+    }
+
+    .head .left img:nth-child(3) {
+        width: 5.783%;
+        left: 50%;
+        transform: translate(-95%);
+        bottom: 25.5%;
+    }
+
+    .head .left img:nth-child(4) {
+        width: 18.15%;
+        left: 25.5%;
+        bottom: 35.5%;
+    }
+
+    .head .left img:nth-child(5) {
+        width: 28.42%;
+        bottom: 51%;
+        left: 1%;
+    }
+
+    .head .right img:nth-child(1) {
+        width: 18.925%;
+        bottom: 26%;
+        right: 28.95%;
+    }
+
+    .head .right img:nth-child(2) {
+        width: 19.976%;
+        bottom: 37%;
+        right: 12%;
+    }
+
+    .head .right img:nth-child(3) {
+        width: 5.783%;
+        right: 50%;
+        transform: translate(95%);
+        bottom: 25.5%;
+    }
+
+    .head .right img:nth-child(4) {
+        width: 18.15%;
+        right: 25.5%;
+        bottom: 35.5%;
+    }
+
+    .head .right img:nth-child(5) {
+        width: 28.42%;
+        bottom: 51%;
+        right: 1%;
     }
 
 }
 
 /* Animation UwU */
 
-/* default */
+/* card-1 animation */
+/* default stage*/
 #section-1.hidden .card .symbol{
 
     .books img:nth-child(1), .books img:nth-child(2) {
@@ -436,7 +530,7 @@ section.show .card .union {
     .books img {
         rotate: 0deg;
         opacity: 1;
-        transition: all 1.5s;
+        transition: all 1.25s;
         transition-timing-function: ease;
     }
 
@@ -610,8 +704,269 @@ section.show .card .union {
     }
 
     .eyes img {
-        animation-duration: 1.5s;
+        animation-duration: 1s;
         animation-timing-function: ease;
         animation-fill-mode: forwards;
+    }
+}
+
+/* card-2 animation */
+/* default stage*/
+
+#section-2.hidden .card .symbol {
+    .arrows img {
+        opacity: 0;
+    }
+    .arrows img:nth-child(1) {
+        rotate: -60deg;
+        bottom: 27.5%;
+        left: -40.5%;
+    }
+
+    .arrows img:nth-child(2) {
+        rotate: -4.5deg;
+        bottom: 7.5%;
+        left: -3.5%;
+    }
+
+    .arrows img:nth-child(3) {
+        rotate: 4.5deg;
+        bottom: 7.5%;
+        right: -3.5%;
+    }
+
+    .arrows img:nth-child(4) {
+        rotate: 60deg;
+        bottom: 27.5%;
+        right: -40.5%;
+    }
+
+    .head > img {
+        bottom: 24%;
+        transform: translate(-50%) scale(150%);
+    }
+
+    .head .left img:nth-child(1) {
+        transform: scale(150%) translate(-5%, -140%);
+        rotate: -30deg;
+    }
+
+    .head .left img:nth-child(2) {
+        transform: scale(150%) translate(-20%, -175%);
+        rotate: -45deg;
+    }
+
+    .head .left img:nth-child(3) {
+        transform: scale(150%) translate(-84.5%, -140%);
+    }
+
+    .head .left img:nth-child(4) {
+        transform: scale(150%) translate(-121%, -112%);
+    }
+
+    .head .left img:nth-child(5) {
+        transform: scale(150%) translate(-52%, -80%);
+        rotate: -30deg;
+    }
+    
+    .head .right img:nth-child(1) {
+        transform: scale(150%) translate(5%, -140%);
+        rotate: 30deg;
+    }
+
+    .head .right img:nth-child(2) {
+        transform: scale(150%) translate(20%, -175%);
+        rotate: 45deg;
+    }
+
+    .head .right img:nth-child(3) {
+        transform: scale(150%) translate(84.5%, -205%);
+    }
+
+    .head .right img:nth-child(4) {
+        transform: scale(150%) translate(121%, -112%);
+    }
+
+    .head .right img:nth-child(5) {
+        transform: scale(150%) translate(52%, -80%);
+        rotate: 30deg;
+    }
+    
+}
+
+/* card-2 hover part */
+#section-2.show .card:hover .symbol {
+    .arrows img {
+        opacity: 0;
+    }
+    .arrows img:nth-child(1) {
+        rotate: -60deg;
+        bottom: 27.5%;
+        left: -40.5%;
+    }
+
+    .arrows img:nth-child(2) {
+        rotate: -4.5deg;
+        bottom: 7.5%;
+        left: -3.5%;
+    }
+
+    .arrows img:nth-child(3) {
+        rotate: 4.5deg;
+        bottom: 7.5%;
+        right: -3.5%;
+    }
+
+    .arrows img:nth-child(4) {
+        rotate: 60deg;
+        bottom: 27.5%;
+        right: -40.5%;
+    }
+
+    .head > img {
+        bottom: 24%;
+        transform: translate(-50%) scale(150%);
+    }
+
+    .head .left img:nth-child(1) {
+        transform: scale(150%) translate(-5%, -140%);
+        rotate: -30deg;
+    }
+
+    .head .left img:nth-child(2) {
+        transform: scale(150%) translate(-20%, -175%);
+        rotate: -45deg;
+    }
+
+    .head .left img:nth-child(3) {
+        transform: scale(150%) translate(-84.5%, -140%);
+    }
+
+    .head .left img:nth-child(4) {
+        transform: scale(150%) translate(-121%, -112%);
+    }
+
+    .head .left img:nth-child(5) {
+        transform: scale(150%) translate(-52%, -80%);
+        rotate: -30deg;
+    }
+    
+    .head .right img:nth-child(1) {
+        transform: scale(150%) translate(5%, -140%);
+        rotate: 30deg;
+    }
+
+    .head .right img:nth-child(2) {
+        transform: scale(150%) translate(20%, -175%);
+        rotate: 45deg;
+    }
+
+    .head .right img:nth-child(3) {
+        transform: scale(150%) translate(84.5%, -205%);
+    }
+
+    .head .right img:nth-child(4) {
+        transform: scale(150%) translate(121%, -112%);
+    }
+
+    .head .right img:nth-child(5) {
+        transform: scale(150%) translate(52%, -80%);
+        rotate: 30deg;
+    }
+    
+}
+
+/* card-2 show part */
+
+#section-2.show .card .symbol {
+    .arrows img {
+        opacity: 1;
+    }
+
+    .arrows img:nth-child(1) {
+        rotate: 0deg;
+        bottom: 8.5%;
+        left: 8.5%;
+    }
+
+    .arrows img:nth-child(2) {
+        rotate: 0deg;
+        bottom: 4.5%;
+        left: 14.5%;
+    }
+
+    .arrows img:nth-child(3) {
+        rotate: 0deg;
+        bottom: 8.5%;
+        right: 10.25%;
+    }
+
+    .arrows img:nth-child(4) {
+        rotate: 0deg;
+        bottom: 4.5%;
+        right: 16.25%;
+    }
+
+    .head > img {
+        bottom: 8%;
+        transform: translate(-50%) scale(100%);
+    }
+
+    .head .left img:nth-child(1) {
+        transform: scale(100%) translate(0%, 0%);
+        rotate: 0deg;
+    }
+
+    .head .left img:nth-child(2) {
+        transform: scale(100%) translate(0%, 0%);
+        rotate: 0deg;
+    }
+
+    .head .left img:nth-child(3) {
+        transform: scale(100%) translate(-95%, 0%);
+    }
+
+    .head .left img:nth-child(4) {
+        transform: scale(100%) translate(0%, 0%);
+    }
+
+    .head .left img:nth-child(5) {
+        transform: scale(100%) translate(0%, 0%);
+        rotate: 0deg;
+    }
+    
+    .head .right img:nth-child(1) {
+        transform: scale(100%) translate(0%, 0%);
+        rotate: 0deg;
+    }
+
+    .head .right img:nth-child(2) {
+        transform: scale(100%) translate(0%, 0%);
+        rotate: 0deg;
+    }
+
+    .head .right img:nth-child(3) {
+        transform: scale(100%) translate(95%, 0%);
+    }
+
+    .head .right img:nth-child(4) {
+        transform: scale(100%) translate(0%, 0%);
+    }
+
+    .head .right img:nth-child(5) {
+        transform: scale(100%) translate(0%, 0%);
+        rotate: 0deg;
+    }
+
+    /* I seperate nested for different timing animation*/
+
+    .arrows img {
+        transition: all 1s;
+        transition-timing-function: ease-out;
+    }
+
+    .head img {
+        transition: all 1.25s;
+        transition-timing-function: ease;
     }
 }

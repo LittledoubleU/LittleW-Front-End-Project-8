@@ -27,13 +27,13 @@
 </mask>
 <g mask="url(#mask0_31_251)">
 <g style="mix-blend-mode:overlay" opacity="0.6" filter="url(#filter1_f_31_251)">
-<ellipse cx="342" cy="725" rx="347" ry="341" fill="white"/>
+<ellipse cx="342" cy="725" rx="347" ry="341" fill="#36B6FF"/>
 </g>
 <g style="mix-blend-mode:overlay" opacity="0.6" filter="url(#filter2_f_31_251)">
-<ellipse cx="342" cy="725" rx="347" ry="341" fill="white"/>
+<ellipse cx="342" cy="725" rx="347" ry="341" fill="#36B6FF"/>
 </g>
 <g style="mix-blend-mode:overlay" opacity="0.6" filter="url(#filter3_f_31_251)">
-<ellipse cx="342" cy="279" rx="347" ry="341" fill="white"/>
+<ellipse cx="342" cy="279" rx="347" ry="341" fill="#36B6FF"/>
 </g>
 </g>
 <defs>
