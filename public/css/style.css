@@ -288,6 +288,41 @@ section {
 
 }
 
+/* card-3 */
+#section-3 .growing, #section-3 .union {
+    img {
+        bottom: -5%;
+    }
+
+}
+
+.symbol {
+    .shaman img {
+        position: absolute;
+    }
+
+    .shaman img:nth-child(2) {
+        left: 27.75%;
+        bottom: 30.5%;
+        max-width: 47%;
+    }
+
+    .shaman img:nth-child(1) {
+        left: 50%;
+        bottom: 20%;
+        transform: translate(-50%);
+        max-width: 75%;
+    
+    }
+
+    .shaman img:nth-child(3) {
+        left: 50%;
+        bottom: 30%;
+        transform: translate(-62%);
+        max-width: 53%;
+    }
+}
+
 /* Animation UwU */
 
 /* card-1 animation */
@@ -967,6 +1002,69 @@ section.show .card .union {
 
     .head img {
         transition: all 1.25s;
+        transition-timing-function: ease;
+    }
+}
+
+/* card-3 animation */
+/* default stage*/
+
+#section-3.hidden .card .symbol {
+    .shaman img:nth-child(1) {
+        transform: translate(-1%, 64%) scale(200%);
+        rotate: 75deg;
+        opacity: 0;
+    }
+
+    .shaman img:nth-child(2) {
+        transform: scale(200%);
+        rotate: 167deg;
+    }
+
+    .shaman img:nth-child(3) {
+        transform: translate(-80%, 5%) scale(200%);
+    }
+}
+
+/* card-3 hover part */
+#section-3.hidden .card:hover .symbol {
+    .shaman img:nth-child(1) {
+        transform: translate(-1%, 64%) scale(200%);
+        rotate: 75deg;
+        opacity: 0;
+    }
+
+    .shaman img:nth-child(2) {
+        transform: scale(200%);
+        rotate: 347deg;
+    }
+
+    .shaman img:nth-child(3) {
+        transform: translate(-80%, 5%) scale(200%);
+    }
+}
+
+/* card-3 show part*/
+
+#section-3.show .card .symbol {
+
+    .shaman img:nth-child(1) {
+        transform: translate(-50%) scale(100%);
+        rotate: 0deg;
+        opacity: 1;
+    }
+
+    .shaman img:nth-child(2) {
+        transform: scale(100%);
+        rotate: 0deg;
+    }
+
+    .shaman img:nth-child(3) {
+        transform: translate(-62%, 0%) scale(100%);
+    }
+
+    .shaman img {
+        transition: all 1s;
         transition-timing-function: ease;
     }
 }
