@@ -1,2 +1,2 @@
 # LittleW-Front-End-Project-8
-I made it for fun uwu
+# Enter: https://littledoubleu.github.io/LittleW-Front-End-Project-8/views/index.html 
